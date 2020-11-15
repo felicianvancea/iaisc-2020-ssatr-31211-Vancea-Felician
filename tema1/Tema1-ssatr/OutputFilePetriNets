@@ -1,0 +1,13 @@
+Marcaj Initial: {P0=1, P1=0, P2=0, P3=0, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T0, Timpul la care este executata:0, Marcaj obtinut: {P0=0, P1=1, P2=1, P3=0, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T1, Timpul la care este executata:1, Marcaj obtinut: {P0=0, P1=0, P2=1, P3=1, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T3, Timpul la care este executata:3, Marcaj obtinut: {P0=0, P1=0, P2=1, P3=0, P4=0, P5=0, P6=1, P7=1, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T2, Timpul la care este executata:4, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=0, P5=1, P6=1, P7=1, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T5, Timpul la care este executata:7, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=0, P5=1, P6=0, P7=0, P8=0, P9=1, P10=0, P12=0, P11=0, P13=0}
+Tranzitie executata: T7, Timpul la care este executata:8, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=1, P5=1, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=1, P13=0}
+Tranzitie executata: T4, Timpul la care este executata:9, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=1, P5=0, P6=0, P7=0, P8=1, P9=0, P10=0, P12=0, P11=1, P13=0}
+Tranzitie executata: T6, Timpul la care este executata:11, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=0, P5=0, P6=0, P7=0, P8=0, P9=0, P10=1, P12=0, P11=1, P13=0}
+Tranzitie executata: T8, Timpul la care este executata:12, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=1, P11=1, P13=0}
+Tranzitie executata: T9, Timpul la care este executata:13, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=0, P13=1}
+Tranzitie executata: T10, Timpul la care este executata:14, Marcaj obtinut: {P0=0, P1=0, P2=0, P3=0, P4=1, P5=0, P6=1, P7=0, P8=0, P9=0, P10=0, P12=0, P11=0, P13=0}
+Nu mai exista tranzitii executabile

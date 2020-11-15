@@ -1,0 +1,139 @@
+{
+  "locatii": [
+    {
+      "numeLocatie": "P0",
+      "marcaj": 1
+    },
+    {
+      "numeLocatie": "P1",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P2",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P3",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P4",
+      "marcaj": 1
+    },
+    {
+      "numeLocatie": "P5",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P6",
+      "marcaj": 1
+    },
+    {
+      "numeLocatie": "P7",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P8",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P9",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P10",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P11",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P12",
+      "marcaj": 0
+    },
+    {
+      "numeLocatie": "P13",
+      "marcaj": 0
+    }
+  ],
+  "tranzitii": [
+    {
+      "numeTranzitie": "T0",
+      "temporizareMinima": 0,
+      "temporizareMaxima": 0,
+      "deLaLocatie": [ "P0" ],
+      "spreLocatie": [ "P1", "P2" ]
+    },
+    {
+      "numeTranzitie": "T1",
+      "temporizareMinima": 1,
+      "temporizareMaxima": 1,
+      "deLaLocatie": [ "P1" ],
+      "spreLocatie": [ "P3" ]
+    },
+    {
+      "numeTranzitie": "T2",
+      "temporizareMinima": 4,
+      "temporizareMaxima": 4,
+      "deLaLocatie": [ "P2" ],
+      "spreLocatie": [ "P5" ]
+    },
+    {
+      "numeTranzitie": "T3",
+      "temporizareMinima": 2,
+      "temporizareMaxima": 4,
+      "deLaLocatie": [ "P3", "P4" ],
+      "spreLocatie": [ "P7" ]
+    },
+    {
+      "numeTranzitie": "T4",
+      "temporizareMinima": 2,
+      "temporizareMaxima": 5,
+      "deLaLocatie": [ "P5", "P6" ],
+      "spreLocatie": [ "P8" ]
+    },
+    {
+      "numeTranzitie": "T5",
+      "temporizareMinima": 3,
+      "temporizareMaxima": 4,
+      "deLaLocatie": [ "P6", "P7" ],
+      "spreLocatie": [ "P9" ]
+    },
+    {
+      "numeTranzitie": "T6",
+      "temporizareMinima": 2,
+      "temporizareMaxima": 3,
+      "deLaLocatie": [ "P4", "P8" ],
+      "spreLocatie": [ "P10" ]
+    },
+    {
+      "numeTranzitie": "T7",
+      "temporizareMinima": 0,
+      "temporizareMaxima": 0,
+      "deLaLocatie": [ "P9" ],
+      "spreLocatie": [ "P4", "P6", "P11" ]
+    },
+    {
+      "numeTranzitie": "T8",
+      "temporizareMinima": 0,
+      "temporizareMaxima": 0,
+      "deLaLocatie": [ "P10" ],
+      "spreLocatie": [ "P4", "P6", "P12" ]
+    },
+    {
+      "numeTranzitie": "T9",
+      "temporizareMinima": 0,
+      "temporizareMaxima": 0,
+      "deLaLocatie": [ "P11", "P12" ],
+      "spreLocatie": [ "P13" ]
+    },
+    {
+      "numeTranzitie": "T10",
+      "temporizareMinima": 0,
+      "temporizareMaxima": 0,
+      "deLaLocatie": [ "P13" ],
+      "spreLocatie": []
+    }
+  ]
+ }

@@ -1,0 +1,4 @@
+Instructiuni de folosire:
+Fisierul de intrare in format json se numeste Input se afla la locatia Tema1-ssatr/bin/mas/ssatr/Vancea/Felician/Input
+Fisierul de iesire se numeste Output unde se salveaza starea retelei Petri la un moment dat la locatia Tema1-ssatr/OutputFilePetriNets
+Programul se porneste ruland clasa SimulareReteaPetri.java.
