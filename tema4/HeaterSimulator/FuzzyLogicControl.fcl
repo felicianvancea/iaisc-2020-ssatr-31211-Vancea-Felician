@@ -1,0 +1,50 @@
+FUNCTION_BLOCK FuzzyLogicControl  // Block definition
+
+VAR_INPUT				// Define input variables
+	error : REAL;
+	aggressiveness : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	command : REAL;
+END_VAR
+
+FUZZIFY error			// Fuzzify input variable
+	TERM small := (0, 0) (60, 1) (120, 0); 
+	TERM medium := (90, 0) (150,1) (210,0);
+	TERM large := (180, 0) (240, 1) (300,0);
+END_FUZZIFY
+
+FUZZIFY aggressiveness			// Fuzzify input variable
+	//TERM less := (0, 0) (2, 1) (6,0);
+	TERM less := (1, 1) (6,0);
+	//TERM more := (4,0) (7,1) (9,0);
+	TERM more := (4,0) (9,1);
+END_FUZZIFY
+
+DEFUZZIFY command			// Defzzzify output variable
+	TERM zero := (0, 1) (60, 0); 
+	TERM small := (0, 0) (60, 1) (120, 0); 
+	TERM medium := (90, 0) (150,1) (210,0);
+	TERM large := (150, 0) (210, 1) (255,0);
+	TERM maxima := (240, 0) (255, 1);
+	METHOD : COG;		// Use 'Center Of Gravity' defuzzification method
+	DEFAULT := 0;		// Default value is 0 (if no rule activates defuzzifier)
+END_DEFUZZIFY
+
+RULEBLOCK No1
+	AND : MIN;			// Use 'min' for 'and' (also implicit use 'max' for 'or' to fulfill DeMorgan's Law)
+	ACT : MIN;			// Use 'min' activation method
+	ACCU : MAX;			// Use 'max' accumulation method
+
+	RULE 1 : IF error IS small AND aggressiveness IS less THEN command IS zero;
+	RULE 2 : IF error IS medium AND aggressiveness IS less THEN command IS small; 
+	RULE 3 : IF error IS large AND aggressiveness IS less THEN command IS medium;
+	RULE 4 : IF error IS small AND aggressiveness IS more THEN command IS medium;
+	RULE 5 : IF error IS medium AND aggressiveness IS more THEN command IS large; 
+	RULE 6 : IF error IS large AND aggressiveness IS more THEN command IS maxima;
+END_RULEBLOCK
+
+
+
+END_FUNCTION_BLOCK
